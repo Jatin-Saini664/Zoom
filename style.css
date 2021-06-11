@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*$ Header */
+
+header{
+    height: 80vh;
+    width: 5vw;
+    position: absolute;
+    left: 0px;
+    top: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(144, 238, 144, 0.4);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 70px;
+}
+
+header .common{
+    width: 80%;
+    height: 8.5vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .common:hover{
+    background:rgb(144, 238, 144, 0.5);
+}
+
+header svg{
+    width: 100%;
+    height: 70%;
+}
+
+.pencil svg{
+    height: 80%;
+}
+
+.pencil-card{
+    position: absolute;
+    width: 16vw;
+    height: 20vh;
+    left: 13vh;
+    top: 5vh;
+    background: lightcoral;
+    border-radius: 15px;
+    /* z-index: 4; */
+    transition: all 1s;
+    transform-origin: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pencil-card::before{
+    content: "";
+    display: inline;
+    position: absolute;
+    left: -2vw;
+    top: 2.5vh;
+    border-right: 4.2vh solid lightcoral;
+    border-top: 3vh solid transparent;
+    border-bottom: 3vh solid transparent;
+    transition: all 1s;
+    transform-origin: left;
+}
+
+.pencil-card>.card1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45%;
+}
+
+.pencil-card .size{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: lawngreen;
+    color: azure;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, serif;
+    cursor: pointer;
+}
+
+.pencil-card>.card1>.size2{
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+}
+
+.pencil-card>.card1>.size3{
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+.border{
+    border: 2px solid lightcyan;
+}
+
+.pencil-card>.card2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45%;
+}
+
+.pencil-card .color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.red{
+    background: #ff0000;
+}
+
+.blue{
+    background: #0000ff;
+}
+
+.yellow{
+    background: #ffff00;
+}
+
+.eraser-card{
+    position: absolute;
+    width: 16vw;
+    height: 10vh;
+    left: 13vh;
+    top: 20vh;
+    background: lightcoral;
+    border-radius: 15px;
+    /* z-index: 4; */
+    transition: all 1s;
+    transform-origin: left;
+}
+
+.eraser-card::before{
+    content: "";
+    display: inline;
+    position: absolute;
+    left: -1.4vw;
+    top: 2.5vh;
+    border-right: 3vh solid lightcoral;
+    border-top: 1.5vh solid transparent;
+    border-bottom: 1.5vh solid transparent;
+    transition: all 1s;
+    transform-origin: left;
+}
+
+.eraser-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.eraser-card .size{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: lawngreen;
+    color: azure;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, serif;
+    cursor: pointer;
+}
+
+.eraser-card>.size2{
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+}
+
+.eraser-card>.size3{
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+.select{
+    background:rgb(144, 238, 144, 1);
+}
+
+
+
+/*$ Live-Recording */
+
+.live-recording{
+    position: absolute;
+    width: 18vw;
+    height: 10vh;
+    right: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#start-share{
+    width: 45%;
+    height: 60%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 1.07rem;
+    background-color: rgba(32, 178, 170, 0.8);
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, serif;
+    box-shadow: 1.5px 1.5px 1.5px 1px rgb(32, 178, 170, 0.3);
+}
+
+#start-share:hover{
+    box-shadow: 3px 3px 3px 2px rgb(32, 178, 170, 0.3);
+    background:rgb(32, 178, 170, 1);
+}
+
+#start-video{
+    width: 45%;
+    height: 60%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 1.07rem;
+    background-color: rgba(32, 178, 170, 0.8);
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, serif;
+    box-shadow: 1.5px 1.5px 1.5px 1px rgb(32, 178, 170, 0.3);
+}
+
+#start-video:hover{
+    box-shadow: 3px 3px 3px 2px rgb(32, 178, 170, 0.3);
+    background:rgb(32, 178, 170, 1);
+}
+
+#stop-share{
+    width: 45%;
+    height: 60%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 1.07rem;
+    background-color: rgba(32, 178, 170, 0.8);
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, serif;
+    box-shadow: 1.5px 1.5px 1.5px 1px rgb(32, 178, 170, 0.3);
+}
+
+#stop-share:hover{
+    box-shadow: 3px 3px 3px 2px rgb(32, 178, 170, 0.3);
+    background:rgb(32, 178, 170, 1);
+}
+
+#stop-video{
+    width: 45%;
+    height: 60%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 1.07rem;
+    background-color: rgba(32, 178, 170, 0.8);
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, serif;
+    box-shadow: 1.5px 1.5px 1.5px 1px rgb(32, 178, 170, 0.3);
+}
+
+#stop-video:hover{
+    box-shadow: 3px 3px 3px 2px rgb(32, 178, 170, 0.3);
+    background:rgb(32, 178, 170);
+}
+
+/*$ Content */
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    background: lightgray;
+}
+
+#canvas{
+    background: rgb(217, 248, 171);
+}
+
+
+/*$ Gallery */
+
+#gallery{
+    width: 12vh;
+    height: 6vh;
+    position: absolute;
+    top: 90%;
+    left: 92%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 1.07rem;
+    background-color: rgba(32, 178, 170, 0.8);
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, serif;
+    box-shadow: 1.5px 1.5px 1.5px 1px rgb(32, 178, 170, 0.3);
+}
+
+#gallery:hover{
+    box-shadow: 3px 3px 3px 2px rgb(32, 178, 170, 0.3);
+    background:rgb(32, 178, 170, 1);
+}
+
+
+/*$ Video */
+
+.video-container{
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    width: 280px;
+    height: 200px;
+    z-index: 3;
+    border-radius: 10px;
+    background: rgb(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.video-container video{
+    width: 97%;
+    height: 95%;
+    border-radius: 10px;
+}
